@@ -12,35 +12,45 @@
     <link rel="stylesheet" href="mycss.css" type="text/css" />
   
     <style type="text/css">
-      .container table tr td {
+      .container table tr td 
+      {
         text-align: center;
         font-weight: bold;
         font-size: 36px;
       }
-      .container table tr td {
+      .container table tr td 
+      {
         font-weight: bold;
       }
-      .container table tr td {
+      .container table tr td 
+      {
         font-weight: bold;
       }
-      .container table tr td tu {
+      .container table tr td tu 
+      {
         font-weight: bold;
       }
-      .container table tr td {
+      .container table tr td 
+      {
         font-size: 36px;
       }
-      #languageDropdown {
-            margin-left: 10px;
-            border-color: #663c24;
-            background-color: #663c24;
-        }
-        .dropdown-menu .dropdown-item {
-            color: #000000; /* Text color */
-        }
-        body {
-            font-size: 17px;
-        }
-        .footer {
+      a:link 
+      {
+        color: #FFFFFF;
+      }
+      a:hover 
+      {
+        color: #FFFFFF;
+      }
+      a:visited 
+      {
+        color: #F0F0F0;
+      }
+      a:active 
+      {
+        color: #F0F0F0;
+      }
+      .footer {
             text-align: center;
             padding: 1rem;
             background-color: #663c24;
@@ -88,19 +98,11 @@
         .dropdown-submenu .dropdown-menu {
             display: none;
         }
-
-        html {
-          scroll-behavior: smooth;
-        }
     </style>
 
   </head>
   
   <body>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
@@ -133,14 +135,14 @@
                         <div class="dropdown-submenu">
                             <a class="dropdown-item dropdown-toggle" href="#">Consulting Services</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="consulting.html#business-consulting">- Business Consulting</a>
-                                <a class="dropdown-item" href="consulting.html#management-consulting">- Management Consulting</a>
-                                <a class="dropdown-item" href="consulting.html#financial-consulting">- Financial Consulting</a>
-                                <a class="dropdown-item" href="consulting.html#valuation-consulting">- Valuation Consulting</a>
-                                <a class="dropdown-item" href="consulting.html#it-consulting">- Information Technology</a>
-                                <a class="dropdown-item" href="consulting.html#quality-management">- Quality Management</a>
-                                <a class="dropdown-item" href="consulting.html#logistics">- Logistics</a>
-                                <a class="dropdown-item" href="consulting.html#arbitration">- Commercial Arbitration</a>
+                                <a class="dropdown-item" href="consulting.html">- Business Consulting</a>
+                                <a class="dropdown-item" href="consulting.html">- Management Consulting</a>
+                                <a class="dropdown-item" href="consulting.html">- Financial Consulting</a>
+                                <a class="dropdown-item" href="consulting.html">- Valuation Consulting</a>
+                                <a class="dropdown-item" href="consulting.html">- Information Technology</a>
+                                <a class="dropdown-item" href="consulting.html">- Quality Management</a>
+                                <a class="dropdown-item" href="consulting.html">- Logistics</a>
+                                <a class="dropdown-item" href="consulting.html">- Commercial Arbitration</a>
                             </div>
                         </div>
                     </div>
@@ -150,43 +152,54 @@
                     <a class="nav-link" href="contactus.html"> Contact us </a>
                 </li>
             </ul>
+        
+    <script type="text/javascript">
 
-            <script type="text/javascript">
-                function Gsitesearch(curobj) {
-                    curobj.q.value = curobj.qfront.value
-                }
-            </script>
+      function Gsitesearch(curobj)
+      {
+        curobj.q.value=curobj.qfront.value
+      }
 
-            <form action="https://www.google.com/search" method="get" onSubmit="Gsitesearch(this)" class="form-inline my-2 my-lg-0">
-                <input name="q" type="hidden"/>
-                <input id="namesearch" title="Search" name="qfront" type="text" class="form-control mr-sm-2" style="width: 180px; height: 32px;" />
-                <button id="subsearch" class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
-                <div class="dropdown show">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English</a>
-                    <div class="dropdown-menu" aria-labelledby="languageDropdown" style="text-align: left;">
-                        <a class="dropdown-item" href="indexAr.html">Arabic</a>
-                        <a class="dropdown-item" href="indexZh.html">Chinese</a>
-                    </div>
-                </div>
-            </form>
-        </div>
+      setTimeout(function() {
+          window.location.href = "index.html";
+      }, 5000);  // Redirects after 5 seconds (5000 milliseconds)
+
+    </script>
+
+    <form action="https://www.google.com/search" method="get" onSubmit="Gsitesearch(this)" class="form-inline my-2 my-lg-0">
+      <input name="q" type="hidden"/>
+      <input id="namesearch" title="Search" name="qfront" type="text" class="form-control mr-sm-2" style="width: 180px; height: 32px;" />
+      <button id="subsearch" class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+      <div class="dropdown show" style="margin-left: 7px;">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English</a>
+          <div class="dropdown-menu" aria-labelledby="languageDropdown" style="text-align: left;">
+              <a class="dropdown-item" href="indexAr.html">Arabic</a>
+              <a class="dropdown-item" href="indexZh.html">Chinese</a>
+          </div>
+      </div>
+    </form>
+
     </nav>
 
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h2 style="color:white;" >Global Intelligence</h2>
+        <h2 style="color:white;">Global Intelligence</h2>
       </div>
     </div>
 
     <div class="container">
-      </br></br></br></br> 
-      <h1 align="center" height="100"> 404 Page not Found!</h1>
-      <p align="center"> The page you were looking for doesn't exist! Click <a href="https://gictd.com"> here </a> to return to the Home page. </p>
-      <p>&nbsp;</p>
-    </div>
+    </br>
+    <h1 align="center" height="100"> </h1>
+    <h3 align="center"> Thank you for contacting us, we will get back to you as soon as possible. </h3>
+    
+    </br></br></br></br>
+
+    <p style="text-align:center;">
+    </br></br>
+    <img src="images/thankyou.png" width="450" height="265" align="middle" alt="thank you"></div>
+    </p> </br></br>
 
     <div class="footer">
-
       <a href="privacypolicy.html">Privacy Policy | </a>
       <a href="sitemap.html">Site Map | </a>
       <a href="disclaimar.html">Disclaimer</a>
@@ -195,7 +208,9 @@
           <p>Copyright © 2017 - 2021 GICTD Inc. All Rights Reserved </p>
       </div>
 
+    </div>
+
   </div>
-  </body>
+</body>
 
 </html>
