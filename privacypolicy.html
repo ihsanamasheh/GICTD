@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/logo.png" type="image/png">
+    <title>GICTD Privacy Policy</title>
+    <link rel="stylesheet" href="mycss.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <style>
+    body{
+      background: url("images/background2.jpg") no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      -o-background-size: cover;
+      font-size: 18px;
+    }
+    a {
+        color: #fff;
+    }
+    a:hover {
+        color: #fff;
+    }
+    .card {
+      background-color: transparent;
+    }
+    p.thick {
+      font-weight: 620;
+      font-size: 1.1em;
+    }
+    .dropdown-item.active, .dropdown-item:active {
+        color: #fff;
+        text-decoration: none;
+        background-color: #663c24;
+    }
+    #languageDropdown {
+        margin-left: 10px;
+        border-color: #663c24;
+        background-color: #663c24;
+    }
+    .dropdown-menu .dropdown-item {
+        color: #000000; /* Text color */
+    }
+        /* Parent dropdown */
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        /* Submenu appears to the right */
+        .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -1px;
+            position: absolute;
+        }
+
+        /* Remove arrow for submenu toggle */
+        .dropdown-submenu > a:after {
+            content: " ";
+            float: right;
+        }
+
+        /* Make sure the submenu shows when hovering over the parent item */
+        .dropdown-submenu:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* Submenu alignment */
+        .dropdown-submenu .dropdown-menu {
+            display: none;
+        }
+
+        html {
+          scroll-behavior: smooth;
+        }
+
+  </style>
+
+  <body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <h5 style="color: #663c24; padding-right: 15px; padding-top: 17px;"> GICTD </h5>
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="GICTC" ​width="50" height="70" class="d-inline-block align-top"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <h5 style="color: #663c24; padding-left: 3px; padding-top: 17px; margin-right: 50%;">Global Intelligence</h5>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <!-- Search Box and Language Dropdown -->
+            <form onsubmit="event.preventDefault(); searchSite();" style="display: inline-flex; align-items: center; position: fixed; right: 30px;">
+                <!-- Language Dropdown to the left of the search box -->
+                <div class="dropdown show" style="margin-right: 10px;">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English</a>
+                    <div class="dropdown-menu" aria-labelledby="languageDropdown" style="text-align: left;">
+                        <a class="dropdown-item" href="indexAr.html">Arabic</a>
+                        <a class="dropdown-item" href="indexZh.html">Chinese</a>
+                    </div>
+                </div>
+
+                <!-- Search Box -->
+                <input id="namesearch" title="Search" name="qfront" type="text" class="form-control" style="width: 180px; height: 35px; border-color: #663c24; margin-right: 10px; display: none;" />
+                <button id="subsearch" class="btn btn-outline-success" type="button" onclick="toggleSearchBox()" style="height: 35px;">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+
+    </nav>
+
+    <!-- Upper navigation bar -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto" style="display: flex; justify-content: center; width: 100%; padding-left: 0; list-style: none;">
+                        <li class="nav-item active" style="margin: 0 15px;"> <!-- Home (index) -->
+                            <a class="nav-link" href="index.html" style="color: #FFFFFF; ">Home</a>
+                        </li>
+                        <li class="nav-item dropdown" style="margin: 0 15px;"> <!-- Our Company -->
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #FFFFFF;">Our Company</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="whoweare.html">About us</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="mission&vision.html">Vision & Mission</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown" style="margin: 0 15px;"> <!-- Services -->
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServices" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #FFFFFF;">Services</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownServices">
+                                <a class="dropdown-item" href="business.html">Business Development</a>
+                                <div class="dropdown-divider"></div>
+                                <div class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Consulting Services</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="consulting.html#business-consulting">- Business Consulting</a>
+                                        <a class="dropdown-item" href="consulting.html#management-consulting">- Management Consulting</a>
+                                        <a class="dropdown-item" href="consulting.html#financial-consulting">- Financial Consulting</a>
+                                        <a class="dropdown-item" href="consulting.html#valuation-consulting">- Valuation Consulting</a>
+                                        <a class="dropdown-item" href="consulting.html#it-consulting">- Information Technology</a>
+                                        <a class="dropdown-item" href="consulting.html#quality-management">- Quality Management</a>
+                                        <a class="dropdown-item" href="consulting.html#logistics">- Logistics</a>
+                                        <a class="dropdown-item" href="consulting.html#arbitration">- Commercial Arbitration</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item" style="margin: 0 15px;"> <!-- Contact us -->
+                            <a class="nav-link" href="contactus.html" style="color: #FFFFFF;">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+          
+          <!-- Breadcrumb navigation -->
+          <nav aria-label="breadcrumb" role="navigation">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Privacy Policy</li>
+            </ol>
+          </nav>
+
+    <div class="container-fluid block">
+
+      <h2 class="card-title">  Privacy Policy</h2>
+      <p class="card-text thick" align="left"  text-align: justify;> <p>This Privacy Policy governs the manner in which Global Intelligence for Consulting & Developing collects, uses, maintains and discloses information collected from users  of the https://gictd.com/ website.</p>
+
+      <h3>Personal identification information</h3>
+      <p>We may collect personal identification information from Users in a variety of ways, including, but not limited to, when Users visit our site, fill out a form, and in connection with other activities, services, features or resources we make available on our Site. Users may be asked for, as appropriate, name, email address, mailing address, phone number. Users may, however, visit our Site anonymously. We will collect personal identification information from Users only if they voluntarily submit such information to us. Users can always refuse to supply personally identification information, except that it may prevent them from engaging in certain Site related activities.</p>
+
+      <h3>Non-personal identification information</h3>
+      <p>We may collect non-personal identification information about Users whenever they interact with our Site. Non-personal identification information may include the browser name, the type of computer and technical information about Users means of connection to our Site, such as the operating system and the Internet service providers utilized and other similar information.</p>
+
+      <h3>Web browser cookies</h3>
+      <p>Our Site may use "cookies" to enhance User experience. User's web browser places cookies on their hard drive for record-keeping purposes and sometimes to track information about them. User may choose to set their web browser to refuse cookies, or to alert you when cookies are being sent. If they do so, note that some parts of the Site may not function properly.</p>
+
+      <h3>How we use collected information</h3>
+      <p>Global Intelligence for Consulting & Developing may collect and use Users personal information for the following purposes:</p>
+      <ul>
+        <li>
+          <i>To run and operate our Site</i><br/>
+          We may need your information display content on the Site correctly.
+        </li>
+        <li>
+          <i>To improve customer service</i><br/>
+          Information you provide helps us respond to your customer service requests and support needs more efficiently.
+        </li>
+        <li>
+          <i>To personalize user experience</i><br/>
+          We may use information in the aggregate to understand how our Users as a group use the services and resources provided on our Site.
+        </li>
+        <li>
+          <i>To run a promotion, contest, survey or other Site feature</i><br/>
+          To send Users information they agreed to receive about topics we think will be of interest to them.
+        </li>
+        <li>
+          <i>To send periodic emails</i><br/>
+          We may use the email address to send User information and updates pertaining to their order. It may also be used to respond to their inquiries, questions, and/or other requests. 
+        </li>
+      </ul>
+
+      <h3>How we protect your information</h3>
+      <p>We adopt appropriate data collection, storage and processing practices and security measures to protect against unauthorized access, alteration, disclosure or destruction of your personal information, username, password, transaction information and data stored on our Site.</p>
+
+      <h3>Sharing your personal information</h3>
+      <p>We do not sell, trade, or rent Users personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification information regarding visitors and users with our business partners, trusted affiliates and advertisers for the purposes outlined above. </p>
+
+      <h3>Electronic newsletters</h3>
+      <p>If User decides to opt-in to our mailing list, they will receive emails that may include company news, updates, related product or service information, etc.</p>
+
+      <h3>Changes to this privacy policy</h3>
+      <p>Global Intelligence for Consulting & Developing has the discretion to update this privacy policy at any time. When we do, we will send you an email. We encourage Users to frequently check this page for any changes to stay informed about how we are helping to protect the personal information we collect. You acknowledge and agree that it is your responsibility to review this privacy policy periodically and become aware of modifications.</p>
+
+      <h3>Your acceptance of these terms</h3>
+      <p>By using this Site, you signify your acceptance of this policy. If you do not agree to this policy, please do not use our Site. Your continued use of the Site following the posting of changes to this policy will be deemed your acceptance of those changes. This privacy policy was built <a href="https://privacypolicies.com/" target="_blank">with a free policy generator</a>.</p>
+
+      <h3>Contacting us</h3>
+      <p>If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this site, please contact us.</p>
+
+      <p>This document was last updated on October 1, 2024.</p>
+      </p>
+        </br></br></br>
+    </div>
+    </div>
+    </div>
+
+    <script type="text/javascript">
+
+        function toggleSearchBox() {
+            var searchBox = document.getElementById("namesearch");
+            if (searchBox.style.display === "none" || searchBox.style.display === "") {
+                 searchBox.style.display = "block";
+                 searchBox.focus();  // Focus on the search box when it's displayed
+            } else {
+                searchBox.style.display = "none";
+            }
+        }
+
+        function submitSearch() {
+            var searchValue = prompt("Enter your search query:");  // Ask user for the search query
+            if (searchValue) {
+                document.getElementById("hiddenSearch").value = searchValue;  // Set the search query in the hidden field
+                document.forms[0].submit();  // Submit the form
+            }
+        }
+
+        // Sample content for search
+        const content = [
+            { title: "Home", url: "index.html" },
+            { title: "About Us", url: "whoweare.html" },
+            { title: "Vision and Mission", url: "mission&vision.html" },
+            { title: "Business Development", url: "business.html" },
+            { title: "Consulting Services", url: "consulting.html" },
+            { title: "Contact Us", url: "contactus.html" },
+            { title: "Privacy Policy", url: "privacypolicy.html" },
+            { title: "Sitemap", url: "sitemap.html" },
+            { title: "Disclaimer", url: "disclaimar.html" },
+            // Add more content as needed
+        ];
+
+        function searchSite() {
+            // Get the search query from the input box
+            const searchQuery = document.getElementById('namesearch').value.toLowerCase();
+            const results = content.filter(page => 
+                page.title.toLowerCase().includes(searchQuery)
+            );
+
+            if (results.length > 0) {
+                // If a matching page is found, redirect to the first matching result
+                window.location.href = results[0].url;
+            } else {
+                // If no matching page is found, display an error message
+                resultsDiv.innerHTML = 
+                    `<div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong>No results found!</strong> Please try a different search term.
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>`;
+            }
+        }
+
+    </script>
+       
+    <div class="footer">
+
+      <a href="privacypolicy.html">Privacy Policy | </a>
+      <a href="sitemap.html">Site Map | </a>
+      <a href="disclaimar.html">Disclaimer</a>
+
+      <div class="col-lg-12 footer-copyright">
+          <p>Copyright © 2017 - 2021 GICTD Inc. All Rights Reserved </p>
+      </div>
+
+  </div>  
+  </body>
+  
+</html>
