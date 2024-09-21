@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> Global Intelligence Company for Consulting & Developing Ltd. </title>
+    <link rel="stylesheet" href="mycss.css" type="text/css" />
+
+    <style type="text/css">
+        a:link {
+            color: #FFFFFF;
+        }
+        a:hover {
+            color: #FFFFFF;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: 1.5rem;
+        }
+        a:visited {
+            color: #F0F0F0;
+        }
+
+        .navbar.navbar-expand-lg.navbar-light.bg-light .navbar-nav.mr-auto .nav-item.dropdown .dropdown-item {
+            color: #000;
+        }
+
+        #languageDropdown {
+            margin-left: 10px;
+            border-color: #663c24;
+            background-color: #663c24;
+        }
+        .dropdown-menu .dropdown-item {
+            color: #000000; /* Text color */
+        }
+        
+        body {
+            font-size: 17px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 0.5rem;
+            background-color: #663c24;
+            color: #FFFFFF;
+            margin-top: 1rem;
+        }
+        footer a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .footer a:hover {
+            color: #f8f9fa8d; /* Lighter color on hover for visibility */
+            text-decoration: none;
+        }
+        .footer-copyright {
+            margin-top: 10px;
+            color: #FFFFFF;
+        }
+
+        /* Parent dropdown */
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        /* Submenu appears to the right */
+        .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -1px;
+            position: absolute;
+        }
+
+        /* Remove arrow for submenu toggle */
+        .dropdown-submenu > a:after {
+            content: " ";
+            float: right;
+        }
+
+        /* Make sure the submenu shows when hovering over the parent item */
+        .dropdown-submenu:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* Submenu alignment */
+        .dropdown-submenu .dropdown-menu {
+            display: none;
+        }
+
+        html {
+          scroll-behavior: smooth;
+        }
+
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <h5 style="color: #663c24; padding-right: 15px; padding-top: 17px;"> GICTD </h5>
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="GICTC" ​width="50" height="70" class="d-inline-block align-top"></a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+            <h5 style="color: #663c24; padding-left: 3px; padding-top: 17px; margin-right: 50%;">Global Intelligence</h5>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- Search Box and Language Dropdown -->
+                <form onsubmit="event.preventDefault(); searchSite();" style="display: inline-flex; align-items: center; position: fixed; right: 30px;">
+                    <!-- Language Dropdown to the left of the search box -->
+                    <div class="dropdown show" style="margin-right: 10px;">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">English</a>
+                        <div class="dropdown-menu" aria-labelledby="languageDropdown" style="text-align: left;">
+                            <a class="dropdown-item" href="indexAr.html">Arabic</a>
+                            <a class="dropdown-item" href="indexZh.html">Chinese</a>
+                        </div>
+                    </div>
+
+                    <!-- Search Box -->
+                    <input id="namesearch" title="Search" name="qfront" type="text" class="form-control" style="width: 180px; height: 35px; border-color: #663c24; margin-right: 10px; display: none;" />
+                    <button id="subsearch" class="btn btn-outline-success" type="button" onclick="toggleSearchBox()" style="height: 35px;">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+
+        </nav>
+
+        <!-- Upper navigation bar -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mr-auto" style="display: flex; justify-content: center; width: 100%; padding-left: 0; list-style: none;">
+                            <li class="nav-item active" style="margin: 0 15px;"> <!-- Home (index) -->
+                                <a class="nav-link" href="index.html" style="color: #FFFFFF; ">Home</a>
+                            </li>
+                            <li class="nav-item dropdown" style="margin: 0 15px;"> <!-- Our Company -->
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #FFFFFF;">Our Company</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="whoweare.html">About us</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="mission&vision.html">Vision & Mission</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown" style="margin: 0 15px;"> <!-- Services -->
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServices" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #FFFFFF;">Services</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownServices">
+                                    <a class="dropdown-item" href="business.html">Business Development</a>
+                                    <div class="dropdown-divider"></div>
+                                    <div class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown-toggle" href="#">Consulting Services</a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="consulting.html#business-consulting">- Business Consulting</a>
+                                            <a class="dropdown-item" href="consulting.html#management-consulting">- Management Consulting</a>
+                                            <a class="dropdown-item" href="consulting.html#financial-consulting">- Financial Consulting</a>
+                                            <a class="dropdown-item" href="consulting.html#valuation-consulting">- Valuation Consulting</a>
+                                            <a class="dropdown-item" href="consulting.html#it-consulting">- Information Technology</a>
+                                            <a class="dropdown-item" href="consulting.html#quality-management">- Quality Management</a>
+                                            <a class="dropdown-item" href="consulting.html#logistics">- Logistics</a>
+                                            <a class="dropdown-item" href="consulting.html#arbitration">- Commercial Arbitration</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item" style="margin: 0 15px;"> <!-- Contact us -->
+                                <a class="nav-link" href="contactus.html" style="color: #FFFFFF;">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service index containers -->
+    <div class="container d-flex justify-content-center align-items-center" style="min-height: 65vh;">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="card" style="width: 100%; border-color: transparent;">
+                    <img src="images/consulting.jpg" alt="consulting.jpg" height="150" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Consulting Services</h4>
+                        <p class="card-text" style="text-align: justify;">Our consulting services focus on our clients' most critical areas such as Economic studies, Strategic planning, Action plans, KPIs management, Real estate appraisal, Auditing systems, ... etc.</p><br>
+                        <a href="consulting.html" class="btn btn-primary" style="padding: 3px;">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card" style="width: 100%; border-color: transparent;">
+                    <img src="images/business.jpg" alt="business" height="150" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Business Development</h4>
+                        <p class="card-text" style="text-align: justify;">Our team provide consultations regarding the development of new projects that harmonize with the technological advance to meet market needs in light of contribution to the development of the economy.</p>
+                        <a href="business.html" class="btn btn-primary" style="padding: 3px;">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        function toggleSearchBox() {
+            var searchBox = document.getElementById("namesearch");
+            if (searchBox.style.display === "none" || searchBox.style.display === "") {
+                 searchBox.style.display = "block";
+                 searchBox.focus();  // Focus on the search box when it's displayed
+            } else {
+                searchBox.style.display = "none";
+            }
+        }
+
+        function submitSearch() {
+            var searchValue = prompt("Enter your search query:");  // Ask user for the search query
+            if (searchValue) {
+                document.getElementById("hiddenSearch").value = searchValue;  // Set the search query in the hidden field
+                document.forms[0].submit();  // Submit the form
+            }
+        }
+
+        // Sample content for search
+        const content = [
+            { title: "Home", url: "index.html" },
+            { title: "About Us", url: "whoweare.html" },
+            { title: "Vision and Mission", url: "mission&vision.html" },
+            { title: "Business Development", url: "business.html" },
+            { title: "Consulting Services", url: "consulting.html" },
+            { title: "Contact Us", url: "contactus.html" },
+            { title: "Privacy Policy", url: "privacypolicy.html" },
+            { title: "Sitemap", url: "sitemap.html" },
+            { title: "Disclaimer", url: "disclaimar.html" },
+            // Add more content as needed
+        ];
+
+        function searchSite() {
+            // Get the search query from the input box
+            const searchQuery = document.getElementById('namesearch').value.toLowerCase();
+            const results = content.filter(page => 
+                page.title.toLowerCase().includes(searchQuery)
+            );
+
+            if (results.length > 0) {
+                // If a matching page is found, redirect to the first matching result
+                window.location.href = results[0].url;
+            } else {
+                // If no matching page is found, display an error message
+                resultsDiv.innerHTML = 
+                    `<div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong>No results found!</strong> Please try a different search term.
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>`;
+            }
+        }
+
+    </script>
+
+    <!-- Footer -->
+    <div class="footer">
+        <a href="privacypolicy.html">Privacy Policy | </a>
+        <a href="sitemap.html">Site Map | </a>
+        <a href="disclaimar.html">Disclaimer</a>
+        <div class="col-lg-12 footer-copyright">
+            <p>Copyright © 2017 - 2024 GICTD Inc. All Rights Reserved </p>
+        </div>
+    </div>
+
+</body>
+</html>
