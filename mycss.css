@@ -1,0 +1,358 @@
+.carousel{
+    background: white;
+    margin-top: 95px;
+}
+.carousel .item{
+    max-height: 400px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+}
+.bs-example{
+	margin: 20px;
+}
+.carousel-control.right, .carousel-control.left {
+  background-image:none; 
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffff;
+}
+
+
+/* Search button */
+#subsearch {
+    color: #FFFFFF;
+    background-color: transparent;
+    border-color: #FFFFFF;
+}
+#subsearch:hover {
+    color: #663c24;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+#subsearch:focus {
+    outline: none;
+    box-shadow: none;
+}
+.btn-outline-success:not([disabled]):not(.disabled).active, .btn-outline-success:not([disabled]):not(.disabled):active, .show>.btn-outline-success.dropdown-toggle {
+    color: #fff;
+    background-color: #663c24;
+    border-color: #663c24;
+    box-shadow: 0 0 0 0.2rem #663c24;
+}
+.btn-outline-success.focus, .btn-outline-success:focus {
+    box-shadow: 0 0 0 0.2rem #663c24;
+}
+
+
+.jumbotron {
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 0;
+    background-color: #663c24; 
+    width: 100%;
+}
+.righ{
+	float:right;
+	height:5px;
+}
+.nav-link:hover {
+    color: black; /* Lighter color on hover for visibility */
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #f8f9fa0d;
+}
+
+
+/* Breadcrumb navigation */
+.breadcrumb {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0;
+}
+  .breadcrumb a {
+    color: #663c24; /* Change link color to match theme */
+}
+  .breadcrumb a:hover {
+    color: #4f4f4f; /* Slightly darker color on hover for better readability */
+}
+.breadcrumb li:first-child a {
+    color: #2d2d2d; /* Adjust to your desired color */
+}
+
+
+/* Navigation bar */
+#navbarSupportedContent {
+    background-color: #663c24;
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 0;
+}
+/* Navigation link hover effect */
+.navbar-nav .nav-item .nav-link {
+    color: #FFFFFF !important; /* Normal state color */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #663c24 !important; /* Background color on hover */
+    color: #f8f9fa8d !important; /* Lighter text color on hover */
+    border-radius: 5px;
+}
+/* Custom background color and full-width styling */
+.navbar-custom {
+    background-color: #663c24; /* Brown color */
+    width: 100%; /* Ensure full width */
+    padding: 0; /* Remove extra padding */
+    margin: 0; /* Remove margin */
+}
+/* Set text color */
+.navbar-custom .navbar-brand, .navbar-custom .nav-link {
+    color: #fff; /* White text */
+}
+/* Ensure the navbar container is a flexbox container */
+.navbar {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Ensure proper spacing between elements */
+}
+/* Ensure the navbar text is centered vertically */
+.navbar-text {
+    display: flex;
+    align-items: center; /* Center text vertically */
+    font-size: 24px;
+    font-weight: bold;
+    color: #663c24;
+}
+/* Center the search form and language dropdown */
+form {
+    margin-left: auto; /* Push the form (language and search) to the right */
+    display: flex;
+    align-items: center;
+}
+.navbar-custom .navbar-collapse {
+    display: flex;
+    justify-content: space-between; /* Ensures the nav bar items are on the left and the form on the right */
+    width: 100%;
+}
+.navbar-nav {
+    flex-grow: 1; /* Ensures the navigation bar items take up available space */
+}
+/* For navigation bar collapsing on mobile screens */
+.navbar-collapse {
+    transition: height 0.3s ease;
+}
+.navbar-toggler.collapsed + .navbar-collapse {
+    display: none !important;
+}
+
+
+/* Mobile hamburger button */
+.navbar-toggler {
+    border-color: #fff !important; /* Force white border */
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+    /* Force white hamburger icon */
+}
+
+
+/* Language dropdown Button Styles */
+#languageDropdown {
+    margin-right: 5px;
+    border: none;
+    background-color: #663c24;
+}
+.dropdown-menu .dropdown-item {
+    color: #000000; /* Text color */
+}
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 0.5rem;
+    background-color: #663c24;
+    color: #FFFFFF;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.footer a:hover {
+    color: #f8f9fa8d; /* Lighter color on hover for visibility */
+    text-decoration: none;
+}
+.footer-copyright {
+    margin-top: 10px;
+    color: #FFFFFF;
+}
+
+
+/* Navigation bar services parent dropdown styles*/
+.dropdown-submenu {
+    position: relative;
+}
+/* Submenu appears to the right */
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+    position: absolute;
+}
+/* Remove arrow for submenu toggle */
+.dropdown-submenu > a:after {
+    content: " ";
+    float: right;
+}
+/* Make sure the submenu shows when hovering over the parent item */
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
+/* Submenu alignment */
+.dropdown-submenu .dropdown-menu {
+    display: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Position the navbar-right section (language and search) to the right */
+.navbar-right {
+    margin-left: auto; /* Pushes it to the right */
+    display: flex;
+    align-items: center;
+}
+/* Styling for the search box */
+/* Default styling for larger screens */
+#namesearch {
+    position: absolute;
+    right: 60px;
+    width: 0px;
+    display: none;
+    transition: width 0.5s ease;
+    height: 35px;
+}
+/* Ensure suggestions are positioned below the search box */
+#suggestions {
+    display: none;
+    position: absolute;
+    top: 100%; /* Align directly below the search box */
+    right: 0; /* Align with the right side of the search box */
+    min-width: 180px; /* Match the width of your search box */
+    max-width: 180px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    z-index: 1000;
+    list-style-type: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for visibility */
+    margin-right: 80px;
+}
+
+#namesearch:focus + #suggestions {
+    display: block; /* Show suggestions when search box is focused */
+}
+
+#suggestions li {
+    padding: 8px;
+    font-size: 0.9rem; /* Smaller text for a cleaner look */
+    text-align: center; /* Center text */
+    color: #333; /* Darker text color for contrast */
+    cursor: pointer;
+}
+#suggestions li:hover {
+    background-color: #e2e6ea; /* Highlight on hover for better visibility */
+}
+
+
+/* For screens smaller than 768px (mobile layout) */
+@media (max-width: 768px) 
+{
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-right {
+        order: 2; /* Place navbar-right (search + language dropdown) below main nav items */
+        width: 100%;
+        margin-top: 10px; /* Spacing above the language dropdown */
+    }
+    #languageDropdown {
+        width: 100%; /* Full-width dropdown for better mobile layout */
+    }
+    /* Ensure the language and search buttons are aligned vertically */
+    .navbar-right form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    /* Adjust input and button width for better presentation */
+    .navbar-right .form-control {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .navbar-right .btn {
+        width: 100%;
+    }
+    .navbar-custom {
+        margin-bottom: 20px; /* Adjust this value to increase the space */
+    }
+    /* Add more space between 'Contact us' button and language dropdown */
+    .navbar-nav .nav-item:last-child {
+        margin-bottom: 15px; /* Adjust this value to increase the space */
+    }
+    form {
+        margin-top: 10px; /* Adds space between the "Contact us" and the language dropdown */
+    }
+    /* Ensure the navbar right section (language and search) stays under the navbar items */
+    .navbar-collapse {
+        display: flex;
+       flex-direction: column;
+    }
+    /* Change footer position to relative or static so it doesn't overlap content */
+    .footer {
+        position: relative;  /* Footer will stay at the bottom of the content, not the screen */
+        bottom: auto;        /* Reset bottom position */
+        margin-top: 20px;    /* Add some space above the footer */
+    }
+    #namesearch {
+        flex-grow: 1; /* Allow the search box to grow */
+        display: none; /* Hidden initially */
+        transition: width 0.3s ease-in-out; /* Smooth transition */
+    }
+    #subsearch {
+        flex-shrink: 0; /* Prevent search button from shrinking */
+        width: 50px; /* Fixed width for the search button */
+    }
+    #suggestions {
+        position: absolute;
+        top: 100%;
+        right: 5%; /* Align suggestions to the right edge of the search box */
+        width: 90%; /* Match width of the search box */
+        border: 1px solid #ddd;
+        background-color: #f8f9fa;
+        z-index: 1000;
+        max-height: 150px;
+        overflow-y: auto;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        margin-left: 10px;
+    }
+    /* Adjust spacing for dropdown and search button */
+    .dropdown.show {
+        margin-bottom: 5px; /* Space between dropdown and search button */
+    }
+    #subsearch {
+        width: 100%; /* Full width for search button */
+    }
+}
